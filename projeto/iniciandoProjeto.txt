@@ -1,0 +1,103 @@
+INICIANDO PROJETO
+  $ react-native init AwesomeProject (nome do projeto)
+  $ react-native run-android ou $ react-native start
+  cria a pasta src, cria index.js, muda o import do index.js da raiz
+   
+CONFIGURANDO EDITORCONFIG, ESLINT E PRETTIER
+  adiciona o .editorconfig e coloca as duas ultimas linhas como TRUE
+  $ yarn add eslint -D
+
+  $ yarn eslint --init
+    apaga o package-lock.json
+    $ yarn
+
+  $ yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+    editar o .eslintrc:
+      extends: [
+        ...,
+        'prettier',
+        'prettier/react',
+      ],
+      parser: 'babel-eslint',
+      ...      
+      plugins: [
+        ...,
+        'prettier'
+      ],
+      ...
+      rules: {
+        'prettier/prettier': 'error',
+        'react/jsx-filename-extensions': [
+          'warn', {
+            extensions: ['.jsx', '.js']
+          }
+        ],
+        'import/prefer-default-export': 'off'
+      }
+      
+      *** (vai ficar assim:)
+      module.exports = {
+        env: {
+          es6: true
+        },
+        extends: ["airbnb", "prettier", "prettier/react"],
+        parser: "babel-eslint",
+        globals: {
+          Atomics: "readonly",
+          SharedArrayBuffer: "readonly"
+        },
+        parserOptions: {
+          ecmaFeatures: {
+            jsx: true
+          },
+          ecmaVersion: 2018,
+          sourceType: "module"
+        },
+        plugins: ["react", "prettier"],
+        rules: {
+          "prettier/prettier": "error",
+          "react/jsx-filename-extension": [
+            "warn",
+            {
+              extensions: [".jsx", ".js"]
+            }
+          ],
+          "import/prefer-default-export": "off"
+        }
+      };
+    
+    criar e editar .prettierrc:
+      {
+        "singleQuote": true,
+        "trailingComma": "es5"
+      }
+      
+    caso dê problema no emulador, rodar:
+      $ react-native start --reset-cache
+      
+CONFIGURANDO DEBBUGER PRO RN
+  pesquisar e baixar reactotron
+  $ yarn add reactotron-react-native
+  criar em src:
+    pasta config:
+      Reactotron.js
+    
+    colocar no arquivo:
+    
+    import Reactotron from 'reactotron-react-native';
+    if (__DEV__) {
+      const tron = Reactotron.configure()
+        .useReactNative()
+        .connect();
+        
+      console.tron = tron;
+      
+      tron.clear();
+    }
+    
+    eslintrc: 
+    global: [ ...
+      __DEV__: 'readonly'
+    ]
+ 
+  
