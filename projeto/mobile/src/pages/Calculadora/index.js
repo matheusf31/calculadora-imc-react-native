@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import styles from './styles';
-import teste from '../Calculadora/assets/teste.png';
 
 export default function Calculadora({ navigation }) {
   function Voltar() {
