@@ -12,59 +12,50 @@ CONFIGURANDO EDITORCONFIG, ESLINT E PRETTIER
     $ yarn
 
   $ yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
-    editar o .eslintrc:
-      extends: [
-        ...,
-        'prettier',
-        'prettier/react',
-      ],
-      parser: 'babel-eslint',
-      ...      
-      plugins: [
-        ...,
-        'prettier'
-      ],
-      ...
-      rules: {
-        'prettier/prettier': 'error',
-        'react/jsx-filename-extensions': [
-          'warn', {
-            extensions: ['.jsx', '.js']
-          }
-        ],
-        'import/prefer-default-export': 'off'
-      }
-      
+    editar o .eslintrc:     
       *** (vai ficar assim:)
       module.exports = {
         env: {
-          es6: true
+          es6: true,
+          jest: true,
+          browser: true,
         },
-        extends: ["airbnb", "prettier", "prettier/react"],
-        parser: "babel-eslint",
+        extends: ['airbnb', 'prettier', 'prettier/react'],
+        parser: 'babel-eslint',
         globals: {
-          Atomics: "readonly",
-          SharedArrayBuffer: "readonly"
+          Atomics: 'readonly',
+          SharedArrayBuffer: 'readonly',
         },
         parserOptions: {
           ecmaFeatures: {
-            jsx: true
+            jsx: true,
           },
           ecmaVersion: 2018,
-          sourceType: "module"
+          sourceType: 'module',
         },
-        plugins: ["react", "prettier"],
+        plugins: ['react', 'prettier', 'react-hooks', 'import', 'jsx-ally'],
         rules: {
-          "prettier/prettier": "error",
-          "react/jsx-filename-extension": [
-            "warn",
+          'prettier/prettier': 'error',
+          'react/jsx-filename-extension': [
+            'error',
             {
-              extensions: [".jsx", ".js"]
-            }
+              extensions: ['.jsx', '.js'],
+            },
           ],
-          "import/prefer-default-export": "off"
-        }
+          'import/prefer-default-export': 'off',
+          'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+          'react/jsx-one-expression-per-line': 'off',
+          'global-require': 'off',
+          'react-native/no-raw-text': 'off',
+          'no-params-reassign': 'off',
+          'no-underscore-dangle': 'off',
+          camelcase: 'off',
+          'no-console': ['error', { allow: ['tron'] }],
+          'react-hooks/rules-of-hooks': 'error',
+          'react-hooks/exhaustive-deps': 'warn',
+        },
       };
+
     
     criar e editar .prettierrc:
       {
@@ -99,5 +90,8 @@ CONFIGURANDO DEBBUGER PRO RN
     global: [ ...
       __DEV__: 'readonly'
     ]
+    
+CONFIGURANDO BABEL PLUGIN ROOT IMPORT
+  $ yarn add babel-plugin-root-import eslint-import-resolver-babel-plugin-root-import -D
  
   

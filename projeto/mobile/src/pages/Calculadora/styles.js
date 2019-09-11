@@ -45,6 +45,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 16,
   },
+  logo: {
+    color: '#999',
+    fontSize: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 30,
+    fontFamily: 'Satisfy-Regular',
+  },
 });
 
 export default styles;

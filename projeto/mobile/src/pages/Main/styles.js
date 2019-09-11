@@ -18,9 +18,9 @@ export default styles = StyleSheet.create({
   },
   text: {
     color: '#999',
-    fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: 42,
     alignSelf: 'center',
+    fontFamily: 'Satisfy-Regular',
   },
   buttonText: {
     color: '#FFF',
