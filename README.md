@@ -1,10 +1,11 @@
 # CalculadoraIMC
 
-### Projeto criado para construir uma calculadora de IMC.
+### Projeto criado para praticar meu aprendizado em React Native.
 
 ---
 
 ##### Para rodar o app no seu celular ou emulador:
+
   - Instale o react-native cli e o yarn (para auxiliar no processo) em sua máquina;
   
   - Clone o repositório ou faça download, depois, salve em uma pasta separada;
