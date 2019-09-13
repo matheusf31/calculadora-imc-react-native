@@ -9,34 +9,6 @@ export default function Resultado({ navigation }) {
     navigation.navigate('Calculadora');
   }
 
-  // function Tabela(imc) {
-  //   if (imc > 20) {
-  //     return (
-  //       <Text
-  //         style={{
-  //           fontWeight: 'bold',
-  //           alignSelf: 'center',
-  //           justifyContent: 'center',
-  //         }}
-  //       >
-  //         MAIOR QUE 20
-  //       </Text>
-  //     );
-  //   } else if (imc < 20) {
-  //     return (
-  //       <Text
-  //         style={{
-  //           fontWeight: 'bold',
-  //           alignSelf: 'center',
-  //           justifyContent: 'center',
-  //         }}
-  //       >
-  //         MENOR QUE 20
-  //       </Text>
-  //     );
-  //   }
-  // }
-
   return (
     <View>
       <TouchableOpacity style={styles.buttonVoltar} onPress={Voltar}>
@@ -47,7 +19,15 @@ export default function Resultado({ navigation }) {
         <Text style={styles.text}>Resultado: {imc.toFixed(2)}</Text>
       </View>
 
-      {/* {Tabela(imc)} */}
+      <Text style={styles.textTabela}>Entre 18,5 e 24,9 Peso ideal.</Text>
+      <Text style={styles.textTabela}>
+        Entre 25,0 e 29,9 Você está acima de seu peso (sobrepeso).
+      </Text>
+      <Text style={styles.textTabela}>Entre 30,0 e 34,9 Obesidade grau I.</Text>
+      <Text style={styles.textTabela}>Entre 35,0 Obesidade grau II.</Text>
+      <Text style={styles.textTabela}>
+        40,0 e acima Obesidade graus III e IV.
+      </Text>
     </View>
   );
 }

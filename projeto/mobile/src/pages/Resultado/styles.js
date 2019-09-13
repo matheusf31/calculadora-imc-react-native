@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     padding: 20,
     textAlign: 'center',
     fontSize: 0.07 * width,
+    marginBottom: 40,
   },
   buttonVoltar: {
     height: 28,
@@ -24,6 +25,15 @@ const styles = StyleSheet.create({
     color: '#FFF',
     fontWeight: 'bold',
     fontSize: 16,
+  },
+  textTabelaTabela: {
+    color: '#999',
+    alignSelf: 'flex-start',
+    fontFamily: 'Century Gothic',
+    padding: 10,
+    textAlign: 'center',
+    fontSize: 0.05 * width,
+    paddingRight: 20,
   },
 });
 

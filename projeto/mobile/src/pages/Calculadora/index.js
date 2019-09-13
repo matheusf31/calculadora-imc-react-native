@@ -76,7 +76,7 @@ export default function Calculadora({ navigation }) {
         />
         <TextInput
           keyboardType={'numeric'}
-          placeholder="Altura (cm)"
+          placeholder="Altura (m)"
           style={styles.input}
           placeholderTextColor="#999"
           value={altura}
