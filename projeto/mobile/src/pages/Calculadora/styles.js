@@ -1,4 +1,6 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+
+width = Dimensions.get('window').width;
 
 const styles = StyleSheet.create({
   container1: {
@@ -8,7 +10,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 30,
+    padding: 20,
   },
   input: {
     height: 46,
@@ -39,6 +41,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     justifyContent: 'center',
     alignItems: 'center',
+    marginTop: 10,
   },
   buttonText: {
     color: '#FFF',
@@ -47,11 +50,13 @@ const styles = StyleSheet.create({
   },
   logo: {
     color: '#999',
-    fontSize: 50,
+    fontSize: 0.09 * width,
+    marginBottom: 30,
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 30,
-    fontFamily: 'Satisfy-Regular',
+    marginTop: -100,
+    fontFamily: 'Century Gothic',
+    padding: 20,
   },
 });
 

@@ -14,6 +14,8 @@ export default function Main({ navigation }) {
       <TouchableOpacity style={styles.button} onPress={Muda}>
         <Text style={styles.buttonText}>GET START</Text>
       </TouchableOpacity>
+
+      <Text style={styles.textDivulgacao}>Contato</Text>
     </View>
   );
 }

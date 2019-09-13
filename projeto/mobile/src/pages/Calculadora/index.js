@@ -11,12 +11,42 @@ export default function Calculadora({ navigation }) {
     navigation.navigate('Main');
   }
 
-  function Resultado() {
-    console.log(idade);
-    console.log(peso);
-    console.log(altura);
-    // calcular o IMC, enviar como props para a página resultado
-    navigation.navigate('Resultado');
+  function Resultado(imc) {
+    if (Validacao()) {
+      navigation.navigate('Resultado', { imc });
+    }
+  }
+
+  function CalculaImc() {
+    let sqrtAltura = altura * altura;
+
+    let imc = peso / sqrtAltura;
+
+    return Resultado(imc);
+  }
+
+  function Validacao() {
+    if (
+      (idade === '' || idade < 0) &&
+      (peso === '' || peso < 0) &&
+      (altura === '' || altura < 0)
+    ) {
+      alert('idade, peso e altura invalidos');
+    } else if ((idade === '' || idade < 0) && (peso === '' || peso < 0)) {
+      alert('idade e peso invalidos');
+    } else if ((idade === '' || idade < 0) && (altura === '' || altura < 0)) {
+      alert('idade e altura invalidos');
+    } else if ((peso === '' || peso < 0) && (altura === '' || altura < 0)) {
+      alert('peso e altura invalidos');
+    } else if (idade === '' || idade < 0) {
+      alert('idade invalida');
+    } else if (peso === '' || peso < 0) {
+      alert('peso invalido');
+    } else if (altura === '' || altura < 0) {
+      alert('altura invalida');
+    } else {
+      return true;
+    }
   }
 
   return (
@@ -26,7 +56,7 @@ export default function Calculadora({ navigation }) {
       </TouchableOpacity>
 
       <View style={styles.container2}>
-        <Text style={styles.logo}>IMC</Text>
+        <Text style={styles.logo}>digite seus dados</Text>
 
         <TextInput
           keyboardType={'numeric'}
@@ -38,7 +68,7 @@ export default function Calculadora({ navigation }) {
         />
         <TextInput
           keyboardType={'numeric'}
-          placeholder="Peso"
+          placeholder="Peso (kg)"
           style={styles.input}
           placeholderTextColor="#999"
           value={peso}
@@ -46,13 +76,14 @@ export default function Calculadora({ navigation }) {
         />
         <TextInput
           keyboardType={'numeric'}
-          placeholder="Altura"
+          placeholder="Altura (cm)"
           style={styles.input}
           placeholderTextColor="#999"
           value={altura}
           onChangeText={setAltura}
         />
-        <TouchableOpacity style={styles.buttonCalcular} onPress={Resultado}>
+
+        <TouchableOpacity style={styles.buttonCalcular} onPress={CalculaImc}>
           <Text style={styles.buttonText}>Calcular</Text>
         </TouchableOpacity>
       </View>

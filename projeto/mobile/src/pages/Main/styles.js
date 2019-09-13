@@ -1,4 +1,6 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+
+width = Dimensions.get('window').width;
 
 export default styles = StyleSheet.create({
   container: {
@@ -18,9 +20,20 @@ export default styles = StyleSheet.create({
   },
   text: {
     color: '#999',
-    fontSize: 42,
     alignSelf: 'center',
-    fontFamily: 'Satisfy-Regular',
+    fontFamily: 'Century Gothic',
+    padding: 20,
+    textAlign: 'center',
+    fontSize: 0.07 * width,
+  },
+  textDivulgacao: {
+    color: '#999',
+    alignSelf: 'center',
+    fontFamily: 'Century Gothic',
+    padding: 20,
+    textAlign: 'center',
+    fontSize: 0.05 * width,
+    marginTop: 150,
   },
   buttonText: {
     color: '#FFF',

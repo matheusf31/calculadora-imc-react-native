@@ -1,6 +1,14 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+  text: {
+    color: '#999',
+    alignSelf: 'center',
+    fontFamily: 'Century Gothic',
+    padding: 20,
+    textAlign: 'center',
+    fontSize: 0.07 * width,
+  },
   buttonVoltar: {
     height: 28,
     alignSelf: 'flex-start',
