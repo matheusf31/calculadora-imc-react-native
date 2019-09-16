@@ -18,7 +18,7 @@ export default function Calculadora({ navigation }) {
   }
 
   function Resultado(imc) {
-    if (1) {
+    if (Validacao()) {
       navigation.navigate('Resultado', { imc });
     }
   }
