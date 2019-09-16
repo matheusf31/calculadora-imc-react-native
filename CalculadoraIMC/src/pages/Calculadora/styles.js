@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'black',
     padding: 20,
   },
   input: {
@@ -33,6 +34,7 @@ const styles = StyleSheet.create({
     padding: 20,
     marginTop: 10,
     marginLeft: 10,
+    marginBottom: 10,
   },
   buttonCalcular: {
     height: 46,
@@ -51,12 +53,11 @@ const styles = StyleSheet.create({
   logo: {
     color: '#999',
     fontSize: 0.09 * width,
-    marginBottom: 30,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: -100,
     fontFamily: 'Century Gothic',
-    padding: 20,
+    alignSelf: 'center',
+    justifyContent: 'center',
+    marginTop: 30,
+    marginBottom: 20,
   },
 });
 

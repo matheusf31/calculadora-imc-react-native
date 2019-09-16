@@ -1,13 +1,15 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
 width = Dimensions.get('window').width;
+height = Dimensions.get('window').height;
 
 export default styles = StyleSheet.create({
   container: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 30,
+  },
+  main: {
+    marginTop: 0.2 * height,
   },
   button: {
     height: 46,
@@ -15,8 +17,9 @@ export default styles = StyleSheet.create({
     borderRadius: 50,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 20,
+    marginTop: 0.5 * width,
     padding: 20,
+    marginBottom: 0.1 * width,
   },
   text: {
     color: '#999',
@@ -24,7 +27,7 @@ export default styles = StyleSheet.create({
     fontFamily: 'Century Gothic',
     padding: 20,
     textAlign: 'center',
-    fontSize: 0.07 * width,
+    fontSize: 0.04 * height,
   },
   textDivulgacao: {
     color: '#999',
@@ -33,7 +36,7 @@ export default styles = StyleSheet.create({
     padding: 20,
     textAlign: 'center',
     fontSize: 0.05 * width,
-    marginTop: 150,
+    marginTop: 0.1 * height,
   },
   buttonText: {
     color: '#FFF',

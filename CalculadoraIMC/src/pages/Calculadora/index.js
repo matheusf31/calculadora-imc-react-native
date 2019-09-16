@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import {
+  ScrollView,
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+} from 'react-native';
 import styles from './styles';
 
 export default function Calculadora({ navigation }) {
@@ -12,7 +18,7 @@ export default function Calculadora({ navigation }) {
   }
 
   function Resultado(imc) {
-    if (Validacao()) {
+    if (1) {
       navigation.navigate('Resultado', { imc });
     }
   }
@@ -50,43 +56,45 @@ export default function Calculadora({ navigation }) {
   }
 
   return (
-    <View style={styles.container1}>
+    <ScrollView style={styles.container1}>
       <TouchableOpacity onPress={Voltar} style={styles.buttonVoltar}>
         <Text style={styles.buttonText}>Voltar</Text>
       </TouchableOpacity>
 
-      <View style={styles.container2}>
+      <View>
         <Text style={styles.logo}>digite seus dados</Text>
 
-        <TextInput
-          keyboardType={'numeric'}
-          placeholder="Idade"
-          style={styles.input}
-          placeholderTextColor="#999"
-          value={idade}
-          onChangeText={setIdade}
-        />
-        <TextInput
-          keyboardType={'numeric'}
-          placeholder="Peso (kg)"
-          style={styles.input}
-          placeholderTextColor="#999"
-          value={peso}
-          onChangeText={setPeso}
-        />
-        <TextInput
-          keyboardType={'numeric'}
-          placeholder="Altura (m)"
-          style={styles.input}
-          placeholderTextColor="#999"
-          value={altura}
-          onChangeText={setAltura}
-        />
+        <View style={{ padding: 20 }}>
+          <TextInput
+            keyboardType={'numeric'}
+            placeholder="Idade"
+            style={styles.input}
+            placeholderTextColor="#999"
+            value={idade}
+            onChangeText={setIdade}
+          />
+          <TextInput
+            keyboardType={'numeric'}
+            placeholder="Peso (kg)"
+            style={styles.input}
+            placeholderTextColor="#999"
+            value={peso}
+            onChangeText={setPeso}
+          />
+          <TextInput
+            keyboardType={'numeric'}
+            placeholder="Altura (m)"
+            style={styles.input}
+            placeholderTextColor="#999"
+            value={altura}
+            onChangeText={setAltura}
+          />
 
-        <TouchableOpacity style={styles.buttonCalcular} onPress={CalculaImc}>
-          <Text style={styles.buttonText}>Calcular</Text>
-        </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonCalcular} onPress={CalculaImc}>
+            <Text style={styles.buttonText}>Calcular</Text>
+          </TouchableOpacity>
+        </View>
       </View>
-    </View>
+    </ScrollView>
   );
 }

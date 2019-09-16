@@ -9,13 +9,17 @@ export default function Main({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Calculadora de IMC</Text>
+      <View style={styles.main}>
+        <Text style={styles.text}>Calculadora de IMC</Text>
+      </View>
 
       <TouchableOpacity style={styles.button} onPress={Muda}>
-        <Text style={styles.buttonText}>GET START</Text>
+        <Text style={styles.buttonText}>Começar</Text>
       </TouchableOpacity>
 
-      <Text style={styles.textDivulgacao}>Contato</Text>
+      <View>
+        <Text style={styles.textDivulgacao}>Contato</Text>
+      </View>
     </View>
   );
 }
