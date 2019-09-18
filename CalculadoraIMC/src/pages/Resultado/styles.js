@@ -4,6 +4,9 @@ width = Dimensions.get('window').width;
 height = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
+  resultado: {
+    marginBottom: 0.1 * height,
+  },
   buttonVoltar: {
     height: 28,
     alignSelf: 'flex-start',
@@ -27,8 +30,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Century Gothic',
     padding: 20,
     textAlign: 'center',
-    fontSize: 0.08 * width,
-    marginBottom: 10,
+    fontSize: 0.05 * height,
   },
   container: {
     flexDirection: 'row',
@@ -39,20 +41,19 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderWidth: 1,
     borderColor: '#999',
-    marginLeft: 10,
+    marginLeft: 0.05 * width,
     borderRadius: 5,
   },
   descricao: {
     flex: 1,
-    width: 0.1 * width,
-    height: 0.1 * width,
+    height: 0.06 * height,
     borderColor: '#999',
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 1,
     borderRadius: 5,
     padding: 20,
-    marginRight: 10,
+    marginRight: 0.05 * width,
   },
   textTabela: {
     color: '#999',

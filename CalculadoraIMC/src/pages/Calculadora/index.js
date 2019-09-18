@@ -5,6 +5,7 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
+  KeyboardAvoidingView,
 } from 'react-native';
 import styles from './styles';
 
@@ -17,8 +18,10 @@ export default function Calculadora({ navigation }) {
     navigation.navigate('Main');
   }
 
-  function Resultado(imc) {
-    if (Validacao()) {
+  function Resultado() {
+    let imc = CalculaImc();
+
+    if (Validacao(imc)) {
       navigation.navigate('Resultado', { imc });
     }
   }
@@ -26,42 +29,66 @@ export default function Calculadora({ navigation }) {
   function CalculaImc() {
     let sqrtAltura = altura * altura;
 
+    if (altura > 3) {
+      sqrtAltura = sqrtAltura / 10000;
+    }
+
     let imc = peso / sqrtAltura;
 
-    return Resultado(imc);
+    return imc;
   }
 
-  function Validacao() {
-    if (
-      (idade === '' || idade < 0) &&
-      (peso === '' || peso < 0) &&
-      (altura === '' || altura < 0)
-    ) {
+  function Validacao(imc) {
+    if (VerificaIdade() && VerificaPeso() && VerificaAltura()) {
       alert('idade, peso e altura invalidos');
-    } else if ((idade === '' || idade < 0) && (peso === '' || peso < 0)) {
+    } else if (VerificaIdade() && VerificaPeso()) {
       alert('idade e peso invalidos');
-    } else if ((idade === '' || idade < 0) && (altura === '' || altura < 0)) {
+    } else if (VerificaIdade() && VerificaAltura()) {
       alert('idade e altura invalidos');
-    } else if ((peso === '' || peso < 0) && (altura === '' || altura < 0)) {
+    } else if (VerificaPeso() && VerificaAltura()) {
       alert('peso e altura invalidos');
-    } else if (idade === '' || idade < 0) {
+    } else if (VerificaIdade()) {
       alert('idade invalida');
-    } else if (peso === '' || peso < 0) {
+    } else if (VerificaPeso()) {
       alert('peso invalido');
-    } else if (altura === '' || altura < 0) {
+    } else if (VerificaAltura()) {
       alert('altura invalida');
     } else {
       return true;
     }
   }
 
+  function VerificaIdade() {
+    if (idade === '' || idade < 0 || isNaN(idade)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function VerificaPeso() {
+    if (peso === '' || peso < 0 || isNaN(peso)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function VerificaAltura() {
+    if (altura === '' || altura < 0 || isNaN(altura)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   return (
-    <ScrollView style={styles.container1}>
+    <ScrollView style={styles.container1} keyboardShouldPersistTaps="handled">
       <TouchableOpacity onPress={Voltar} style={styles.buttonVoltar}>
         <Text style={styles.buttonText}>Voltar</Text>
       </TouchableOpacity>
 
-      <View>
+      <KeyboardAvoidingView behavior="padding">
         <Text style={styles.logo}>digite seus dados</Text>
 
         <View style={{ padding: 20 }}>
@@ -90,11 +117,11 @@ export default function Calculadora({ navigation }) {
             onChangeText={setAltura}
           />
 
-          <TouchableOpacity style={styles.buttonCalcular} onPress={CalculaImc}>
+          <TouchableOpacity onPress={Resultado} style={styles.buttonCalcular}>
             <Text style={styles.buttonText}>Calcular</Text>
           </TouchableOpacity>
         </View>
-      </View>
+      </KeyboardAvoidingView>
     </ScrollView>
   );
 }

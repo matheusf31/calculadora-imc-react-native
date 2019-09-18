@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   },
   logo: {
     color: '#999',
-    fontSize: 0.09 * width,
+    fontSize: 0.055 * height,
     fontFamily: 'Century Gothic',
     alignSelf: 'center',
     justifyContent: 'center',

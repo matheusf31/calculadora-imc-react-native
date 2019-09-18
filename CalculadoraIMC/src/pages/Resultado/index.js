@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Text, TouchableOpacity, View, ScrollView } from 'react-native';
 import styles from './styles';
 
 export default function Resultado({ navigation }) {
@@ -10,12 +10,12 @@ export default function Resultado({ navigation }) {
   }
 
   return (
-    <View style={{ flex: 1 }}>
+    <ScrollView style={{ flex: 1 }}>
       <TouchableOpacity style={styles.buttonVoltar} onPress={Voltar}>
         <Text style={styles.buttonText}>Voltar</Text>
       </TouchableOpacity>
 
-      <View style={{ marginBottom: 60 }}>
+      <View style={styles.resultado}>
         <Text style={styles.text}>Resultado: {imc.toFixed(2)}</Text>
       </View>
 
@@ -35,7 +35,7 @@ export default function Resultado({ navigation }) {
         </View>
 
         <View style={styles.descricao}>
-          <Text style={styles.textTabela}>Magraza grau II</Text>
+          <Text style={styles.textTabela}>Magreza grau II</Text>
         </View>
       </View>
 
@@ -98,6 +98,6 @@ export default function Resultado({ navigation }) {
           <Text style={styles.textTabela}>Obesidade grau III</Text>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 }

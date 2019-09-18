@@ -9,7 +9,7 @@ export default styles = StyleSheet.create({
     alignItems: 'center',
   },
   main: {
-    marginTop: 0.2 * height,
+    marginTop: 0.18 * height,
   },
   button: {
     height: 46,
@@ -17,9 +17,9 @@ export default styles = StyleSheet.create({
     borderRadius: 50,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 0.5 * width,
+    marginTop: 0.24 * height,
     padding: 20,
-    marginBottom: 0.1 * width,
+    marginBottom: 0.05 * height,
   },
   text: {
     color: '#999',
@@ -36,11 +36,26 @@ export default styles = StyleSheet.create({
     padding: 20,
     textAlign: 'center',
     fontSize: 0.05 * width,
-    marginTop: 0.1 * height,
+    marginTop: 0.06 * height,
   },
   buttonText: {
     color: '#FFF',
     fontWeight: 'bold',
     fontSize: 16,
+  },
+  image: {
+    alignSelf: 'center',
+    justifyContent: 'center',
+    width: 70,
+    height: 70,
+    marginTop: -0.01 * height,
+    marginRight: 10,
+  },
+  imageGmail: {
+    alignSelf: 'center',
+    justifyContent: 'center',
+    width: 60,
+    height: 60,
+    marginLeft: 10,
   },
 });
