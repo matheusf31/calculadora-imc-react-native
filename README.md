@@ -4,6 +4,10 @@
 
 ---
 
+##### Link do app:
+
+  - [Calculadora de IMC](https://drive.google.com/open?id=1XfY17qKEqGMthunQa01_Op86wOZa6kVR)
+
 ##### Para rodar o app no seu celular ou emulador:
 
   - Instale o react-native cli e o yarn (para auxiliar no processo) em sua máquina;
