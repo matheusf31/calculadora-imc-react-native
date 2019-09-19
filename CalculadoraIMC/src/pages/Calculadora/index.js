@@ -6,6 +6,7 @@ import {
   TextInput,
   TouchableOpacity,
   KeyboardAvoidingView,
+  BackHandler,
 } from 'react-native';
 import styles from './styles';
 
@@ -81,6 +82,11 @@ export default function Calculadora({ navigation }) {
       return false;
     }
   }
+
+  BackHandler.addEventListener('hardwareBackPress', function() {
+    navigation.navigate('Main');
+    return true;
+  });
 
   return (
     <ScrollView style={styles.container1} keyboardShouldPersistTaps="handled">

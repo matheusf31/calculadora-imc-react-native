@@ -1,5 +1,11 @@
 import React from 'react';
-import { Text, TouchableOpacity, View, ScrollView } from 'react-native';
+import {
+  Text,
+  TouchableOpacity,
+  View,
+  ScrollView,
+  BackHandler,
+} from 'react-native';
 import styles from './styles';
 
 export default function Resultado({ navigation }) {
@@ -8,6 +14,11 @@ export default function Resultado({ navigation }) {
   function Voltar() {
     navigation.navigate('Calculadora');
   }
+
+  BackHandler.addEventListener('hardwareBackPress', function() {
+    navigation.navigate('Calculadora');
+    return true;
+  });
 
   return (
     <ScrollView style={{ flex: 1 }}>

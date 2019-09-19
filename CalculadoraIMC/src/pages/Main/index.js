@@ -6,6 +6,7 @@ import {
   Image,
   ScrollView,
   Linking,
+  BackHandler,
 } from 'react-native';
 import styles from './styles';
 import { PanGestureHandler } from 'react-native-gesture-handler';
@@ -24,6 +25,10 @@ export default function Main({ navigation }) {
   function gotoGmail() {
     return Linking.openURL('mailto:matheusg4g4@gmail.com?subject=&body=');
   }
+
+  BackHandler.addEventListener('hardwareBackPress', function() {
+    BackHandler.exitApp();
+  });
 
   return (
     <PanGestureHandler>
