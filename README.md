@@ -8,7 +8,9 @@
 
   - [Calculadora de IMC](https://drive.google.com/open?id=1XfY17qKEqGMthunQa01_Op86wOZa6kVR)
 
-##### Para rodar o app no seu celular ou emulador:
+##### Para rodar o app no seu celular (android) ou emulador:
+
+- Caso esteja usando um emulador:
 
   - Instale o react-native cli e o yarn (para auxiliar no processo) em sua máquina;
   
@@ -21,3 +23,8 @@
   - Após isso, rode:
       
       `$ react-native run-android` e depois `$ react-native start`
+      
+- Caso esteja usando o próprio celular:
+  
+  - Ative o modo desenvolvedor;
+  
