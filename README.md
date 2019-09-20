@@ -1,6 +1,6 @@
 # CalculadoraIMC
 
-<img src="CalculadoraIMC/screenshots/1.jpg" width="160">  |  <img src="CalculadoraIMC/screenshots/2.jpg" width="160">  |  <img src="CalculadoraIMC/screenshots/3.jpg" width="160">  |  <img src="CalculadoraIMC/screenshots/4.jpg" width="160">  |  <img src="CalculadoraIMC/screenshots/5.jpg" width="160">
+<img src="CalculadoraIMC/screenshots/1.jpg" width="160">  <img src="CalculadoraIMC/screenshots/2.jpg" width="160">  <img src="CalculadoraIMC/screenshots/3.jpg" width="160">  <img src="CalculadoraIMC/screenshots/4.jpg" width="160">  <img src="CalculadoraIMC/screenshots/5.jpg" width="160">
 
 # Sobre o projeto
 
