@@ -6,28 +6,46 @@
 
 Projeto criado para praticar meu aprendizado em React Native.
 
-# Link do app:
+# Link do app
 
-  - Android: [Calculadora de IMC](https://drive.google.com/open?id=1XfY17qKEqGMthunQa01_Op86wOZa6kVR)
-  - Ios: Em breve...
+  Android: [Calculadora de IMC](https://drive.google.com/open?id=1XfY17qKEqGMthunQa01_Op86wOZa6kVR)
   
-# Para rodar o app no seu celular (android) ou emulador:
+  Ios: Em breve...
+  
+# Para rodar o app no seu celular (android) ou emulador, no modo desenvolvedor
 
-- Caso esteja usando um emulador:
+#### Caso esteja usando um emulador
 
-  - Instale o react-native cli e o yarn (para auxiliar no processo) em sua máquina;
+###### Configurando o ambiente
+
+  Você precisará configurar um ambiente básico para rodar um app feito com React Native. SIga o passo a passo da [RocketSeat](https://docs.rocketseat.dev/ambiente-react-native/android/emulador);
   
-  - Clone o repositório ou faça download, depois, salve em uma pasta separada;
+  Clone o repositório ou faça download em uma pasta, depois, entre na pasta CalculadoraIMC onde está todo o projeto;
   
-  - Abra o projeto, vá até a pasta `mobile` e rode no terminal `$ yarn`;
+###### Instalando as dependências
+
+  Na pasta rode:
+    
+    `$ yarn`
+    
+  Ou
+    
+    `$ npm install`
+    
+    
+###### Rodando
+
+  - Abra o emulador;
   
-  - Abra o emulador (sugiro o genymotion);
-  
-  - Após isso, rode:
+  - No terminal:
       
-      `$ react-native run-android` e depois `$ react-native start`
+      `$ react-native run-android` 
       
-- Caso esteja usando o próprio celular:
+      `$ react-native start`
+      
+#### Caso esteja usando o próprio celular:
   
   - Ative o modo desenvolvedor;
+    
+    Configurações > Sobre o telefone > Informações de software > 'clique 5 vezes em `Número de compilação`'
   
