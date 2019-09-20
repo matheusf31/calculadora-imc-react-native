@@ -29,7 +29,7 @@ Projeto criado para praticar meu aprendizado em React Native.
 
 ##### Instalando as dependências
 
-  No terminal (onde está todo o projeto)
+  No terminal (onde está todo o projeto):
 
     `$ yarn`
 
@@ -40,7 +40,7 @@ Projeto criado para praticar meu aprendizado em React Native.
     
 ##### Rodando
 
-  Abra o emulador e insara no terminal
+  Abra o emulador e insara no terminal:
         
     `$ react-native run-android` 
 
@@ -49,7 +49,13 @@ Projeto criado para praticar meu aprendizado em React Native.
 
 ### Caso esteja usando o próprio celular:
   
-  Ative o modo desenvolvedor
+  Primeiro ative o modo desenvolvedor;
     
-   Configurações > Sobre o telefone > Informações de software > 'clique 5 vezes em `Número de compilação`'
+  Em seguida vá em:
+  
+  Configurações > Sobre o telefone > Informações de software > 'clique 5 vezes em `Número de compilação`'
+  
+  Volte na página inicial das configurações;
+  
+  Vá em `Opções de desenvolvedor` > Depuração > 'ative a `Depuração USB`
   
