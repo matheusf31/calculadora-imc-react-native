@@ -2,9 +2,11 @@
 
 <img src="CalculadoraIMC/screenshots/1.jpg" width="160">  <img src="CalculadoraIMC/screenshots/2.jpg" width="160">  <img src="CalculadoraIMC/screenshots/3.jpg" width="160">  <img src="CalculadoraIMC/screenshots/4.jpg" width="160">  <img src="CalculadoraIMC/screenshots/5.jpg" width="160">
 
+
 # Sobre o projeto
 
 Projeto criado para praticar meu aprendizado em React Native.
+
 
 # Link do app
 
@@ -12,40 +14,44 @@ Projeto criado para praticar meu aprendizado em React Native.
   
   Ios: Em breve...
   
-# Para rodar o app no seu celular (android) ou emulador, no modo desenvolvedor
-
-#### Caso esteja usando um emulador
-
-###### Configurando o ambiente
-
-  Você precisará configurar um ambiente básico para rodar um app feito com React Native. SIga o passo a passo da [RocketSeat](https://docs.rocketseat.dev/ambiente-react-native/android/emulador);
   
-  Clone o repositório ou faça download em uma pasta, depois, entre na pasta CalculadoraIMC onde está todo o projeto;
-  
-###### Instalando as dependências
+# Para rodar em modo desenvolvedor
 
-  Na pasta rode:
+### Caso esteja usando um emulador
+
+
+##### Configurando o ambiente
+
+    Você precisará configurar um ambiente básico para rodar um app feito com React Native. Siga o passo a passo da [RocketSeat](https://docs.rocketseat.dev/ambiente-react-native/android/emulador);
+  
+    Clone o repositório ou faça download em uma pasta, depois, entre na pasta CalculadoraIMC onde está todo o projeto;
+
+
+##### Instalando as dependências
+
+    No terminal (onde está todo o projeto)
     
-    `$ yarn`
+      `$ yarn`
     
-  Ou
+    Ou
     
-    `$ npm install`
-    
+      `$ npm install`
+   
     
 ###### Rodando
 
-  - Abra o emulador;
+    Abra o emulador
   
-  - No terminal:
+    No terminal
       
       `$ react-native run-android` 
       
       `$ react-native start`
-      
+
+
 #### Caso esteja usando o próprio celular:
   
-  - Ative o modo desenvolvedor;
+    Ative o modo desenvolvedor
     
-    Configurações > Sobre o telefone > Informações de software > 'clique 5 vezes em `Número de compilação`'
+      Configurações > Sobre o telefone > Informações de software > 'clique 5 vezes em `Número de compilação`'
   
