@@ -49,15 +49,13 @@
 
 ### Caso esteja usando o próprio celular:
   
-  - Primeiro ative o modo desenvolvedor;
-
-  - Em seguida vá em:
+  - Ative o modo desenvolvedor seguindo os passos abaixo:
 
     - Configurações > Sobre o telefone > Informações de software > 'clique 5 vezes em `Número de compilação`'
 
   - Volte na página inicial das configurações e vá em:
 
-    - Opções de desenvolvedor > Depuração > 'ative a `Depuração USB`'
+    - Opções de desenvolvedor > Depuração > 'ative `Depuração USB`'
   
-  - Execute o passo que está em: [Rodando](#rodando)
+  - Agora, conecte o aparelho no computador e execute no terminal o passo que está em: [Rodando](#rodando)
   
