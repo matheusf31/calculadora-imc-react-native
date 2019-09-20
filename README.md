@@ -1,16 +1,16 @@
 # CalculadoraIMC
 
-### Projeto criado para praticar meu aprendizado em React Native.
+# Sobre o projeto
+
+Projeto criado para praticar meu aprendizado em React Native.
 
 <img src="CalculadoraIMC/screenshots/3.jpg" width="160">  |  <img src="CalculadoraIMC/screenshots/4.jpg" width="160">  |  <img src="CalculadoraIMC/screenshots/1.jpg" width="160">  |  <img src="CalculadoraIMC/screenshots/2.jpg" width="160">  |  <img src="CalculadoraIMC/screenshots/5.jpg" width="160">
 
----
-
-##### Link do app:
+# Link do app:
 
   - [Calculadora de IMC](https://drive.google.com/open?id=1XfY17qKEqGMthunQa01_Op86wOZa6kVR)
 
-##### Para rodar o app no seu celular (android) ou emulador:
+# Para rodar o app no seu celular (android) ou emulador:
 
 - Caso esteja usando um emulador:
 
