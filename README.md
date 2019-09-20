@@ -29,13 +29,13 @@ Projeto criado para praticar meu aprendizado em React Native.
 
 ##### Instalando as dependências
 
-    No terminal (onde está todo o projeto)
-    
-      `$ yarn`
-    
-    Ou
-    
-      `$ npm install`
+  No terminal (onde está todo o projeto)
+
+    `$ yarn`
+
+  Ou
+
+    `$ npm install`
    
     
 ##### Rodando
@@ -43,7 +43,7 @@ Projeto criado para praticar meu aprendizado em React Native.
   Abra o emulador e insara no terminal
         
     `$ react-native run-android` 
-      
+
     `$ react-native start`
 
 
@@ -51,5 +51,5 @@ Projeto criado para praticar meu aprendizado em React Native.
   
   Ative o modo desenvolvedor
     
-    Configurações > Sobre o telefone > Informações de software > 'clique 5 vezes em `Número de compilação`'
+   Configurações > Sobre o telefone > Informações de software > 'clique 5 vezes em `Número de compilação`'
   
