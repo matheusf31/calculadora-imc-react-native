@@ -57,5 +57,9 @@
 
     - Opções de desenvolvedor > Depuração > 'ative `Depuração USB`'
   
-  - Agora, conecte o aparelho no computador e execute no terminal o passo que está em: [Rodando](#rodando)
+  - Agora, conecte o aparelho no computador e execute no terminal:
+    
+    `$ react-native run-android` 
+
+    `$ react-native start`
   
