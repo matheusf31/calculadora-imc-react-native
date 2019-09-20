@@ -59,5 +59,5 @@
 
     - Opções de desenvolvedor > Depuração > 'ative a `Depuração USB`'
   
-  [Rodando](#-rodando)
+  - Execute o passo que está em: [Rodando](#rodando)
   
