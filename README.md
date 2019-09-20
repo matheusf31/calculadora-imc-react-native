@@ -12,7 +12,7 @@ Projeto criado para praticar meu aprendizado em React Native.
 
   Android: [Calculadora de IMC](https://drive.google.com/open?id=1XfY17qKEqGMthunQa01_Op86wOZa6kVR)
   
-  Ios: Em breve...
+  IOS: Em breve
   
   
 # Para rodar em modo desenvolvedor
@@ -22,9 +22,9 @@ Projeto criado para praticar meu aprendizado em React Native.
 
 ##### Configurando o ambiente
 
-    Você precisará configurar um ambiente básico para rodar um app feito com React Native. Siga o passo a passo da [RocketSeat](https://docs.rocketseat.dev/ambiente-react-native/android/emulador);
-  
-    Clone o repositório ou faça download em uma pasta, depois, entre na pasta CalculadoraIMC onde está todo o projeto;
+  Você precisará configurar um ambiente básico para rodar um app feito com React Native. Siga o passo a passo da [RocketSeat](https://docs.rocketseat.dev/ambiente-react-native/android/emulador);
+
+  Clone o repositório ou faça download em uma pasta, depois, entre na pasta CalculadoraIMC onde está todo o projeto;
 
 
 ##### Instalando as dependências
@@ -38,20 +38,18 @@ Projeto criado para praticar meu aprendizado em React Native.
       `$ npm install`
    
     
-###### Rodando
+##### Rodando
 
-    Abra o emulador
-  
-    No terminal
+  Abra o emulador e insara no terminal
+        
+    `$ react-native run-android` 
       
-      `$ react-native run-android` 
-      
-      `$ react-native start`
+    `$ react-native start`
 
 
-#### Caso esteja usando o próprio celular:
+### Caso esteja usando o próprio celular:
   
-    Ative o modo desenvolvedor
+  Ative o modo desenvolvedor
     
-      Configurações > Sobre o telefone > Informações de software > 'clique 5 vezes em `Número de compilação`'
+    Configurações > Sobre o telefone > Informações de software > 'clique 5 vezes em `Número de compilação`'
   
