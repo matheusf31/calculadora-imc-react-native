@@ -2,11 +2,19 @@
 
 ### Projeto criado para praticar meu aprendizado em React Native.
 
-<img src="CalculadoraIMC/screenshots/1.jpg" width="200">
-<img src="CalculadoraIMC/screenshots/2.jpg" width="200">
-<img src="CalculadoraIMC/screenshots/3.jpg" width="200">
-<img src="CalculadoraIMC/screenshots/4.jpg" width="200">
-<img src="CalculadoraIMC/screenshots/5.jpg" width="200">
+Solarized dark             |  Solarized Ocean           
+:-------------------------:|:-------------------------:
+<img src="CalculadoraIMC/screenshots/1.jpg" width="200">  |  <img src="CalculadoraIMC/screenshots/2.jpg" width="200">
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+<img src="CalculadoraIMC/screenshots/3.jpg" width="200">  |  <img src="CalculadoraIMC/screenshots/4.jpg" width="200">
+
+
+
+
+
+
 
 ---
 
