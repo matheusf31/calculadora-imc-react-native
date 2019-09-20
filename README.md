@@ -8,8 +8,9 @@ Projeto criado para praticar meu aprendizado em React Native.
 
 # Link do app:
 
-  - [Calculadora de IMC](https://drive.google.com/open?id=1XfY17qKEqGMthunQa01_Op86wOZa6kVR)
-
+  - Android: [Calculadora de IMC](https://drive.google.com/open?id=1XfY17qKEqGMthunQa01_Op86wOZa6kVR)
+  - Ios: Em breve...
+  
 # Para rodar o app no seu celular (android) ou emulador:
 
 - Caso esteja usando um emulador:
