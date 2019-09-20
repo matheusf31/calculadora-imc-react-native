@@ -33,7 +33,7 @@
 
     `$ yarn`
 
-  Ou
+     ou
 
     `$ npm install`
    
@@ -58,6 +58,4 @@
   - Volte na página inicial das configurações e vá em:
 
     - Opções de desenvolvedor > Depuração > 'ative a `Depuração USB`'
-    
-  - [](##### Instalando as dependências)
   
