@@ -22,7 +22,7 @@
 
 ##### Configurando o ambiente
 
-  - Você precisará configurar um ambiente básico para rodar um app feito com React Native. Siga o passo a passo da [RocketSeat](https://docs.rocketseat.dev/ambiente-react-native/android/emulador);
+  - Você precisará configurar um ambiente básico para rodar um app feito com React Native. Siga o passo a passo da [RocketSeat](https://docs.rocketseat.dev/ambiente-react-native/introducao);
 
   - Clone o repositório ou faça download em uma pasta, depois, entre na pasta CalculadoraIMC onde está todo o projeto;
 
